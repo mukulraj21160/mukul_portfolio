@@ -1,4 +1,4 @@
-"useClient";
+"use client";
 
 import { Box, Button, Grid, Typography } from "@mui/material";
 import Image from "next/image";
@@ -8,7 +8,7 @@ export default function page() {
   const styles = {
     main: {
       color: "white",
-      padding: "112px 0px 112px 0px",
+      padding: "112px 45px 112px 45px",
     },
     greeting: {
       color: "#ffbd39",
@@ -19,6 +19,7 @@ export default function page() {
     },
     nameHeading: {
       display: "flex",
+      alignItems: "baseline",
       fontSize: "60px",
       fontWeight: "800",
     },
@@ -38,11 +39,28 @@ export default function page() {
       letterSpacing: "2px",
       fontWeight: "600",
       lineHeight: "1.5",
-      padding: "1rem",
-      color: "white",
+      padding: "15px 30px 15px 30px",
+      backgroundColor: "#ffbd39",
+      color: "black",
       textTransform: "none",
       margin: "20px 0px 0px 20px",
       border: "1px solid",
+      borderRadius: "40px",
+      borderColor: "#ffbd39",
+      "&:hover": {
+        backgroundColor: "#ffbd39",
+        color: "black",
+      },
+    },
+    button2: {
+      fontSize: "12px",
+      letterSpacing: "2px",
+      fontWeight: "600",
+      lineHeight: "1.5",
+      padding: "15px 30px 15px 30px",
+      color: "white",
+      textTransform: "none",
+      margin: "20px 0px 0px 20px",
       borderRadius: "40px",
       borderColor: "#fff",
       "&:hover": {
@@ -64,17 +82,23 @@ export default function page() {
             "Full Stack Developer | React | Node | JavaScript | HTML/CSS"
           </Typography>
           <Box>
-            <Button sx={styles.button} variant="outlined">
+            <Button sx={styles.button} variant="contained">
               HIRE ME
             </Button>
-            <Button sx={styles.button} variant="outlined">
+            <Button sx={styles.button2} variant="outlined">
               MY WORKS
             </Button>
           </Box>
         </Grid>
         <Grid item xs={8}>
           <Box>
-            <Image alt="custom image" src={Mukul} width={200} height={200} />
+            <Image
+              alt="custom image"
+              src={Mukul}
+              width={300}
+              height={300}
+              style={{ borderRadius: "20px", marginLeft: "100px" }}
+            />
           </Box>
         </Grid>
       </Grid>

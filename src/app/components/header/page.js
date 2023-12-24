@@ -1,4 +1,4 @@
-"useClient";
+"use client";
 
 import { Box } from "@mui/material";
 import Link from "@mui/material/Link";
@@ -36,7 +36,11 @@ export default function page() {
   return (
     <Box sx={styles.main}>
       <Box sx={styles.mainNav}>
-        <Box sx={styles.logo}>MUKUL</Box>
+        <Box sx={styles.logo}>
+          <Link href="/" underline="none" style={{ color: "white" }}>
+            MUKUL
+          </Link>
+        </Box>
         <Box sx={styles.nav}>
           <Link sx={styles.navLink} href="/" underline="none">
             Home
