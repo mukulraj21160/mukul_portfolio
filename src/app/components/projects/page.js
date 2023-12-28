@@ -12,46 +12,79 @@ import login from "@/app/assets/login.png";
 export default function page() {
   const styles = {
     main: {
-      color: "white",
-      paddingBottom: "112px",
+      "@media only screen and (max-width: 600px)": {
+        //
+      },
+      "@media only screen and (min-width: 992px)": {
+        color: "white",
+        paddingBottom: "112px",
+      },
     },
-    skillsHeading: {
-      display: "flex",
-      justifyContent: "center",
-      color: "white",
-      fontSize: "50px",
-      fontWeight: "700",
-      lineHeight: "1.5",
-      marginTop: "0px",
-      marginBottom: "1.5rem !important",
+    projectHeading: {
+      "@media only screen and (max-width: 600px)": {
+        color: "white",
+        fontSize: "38px",
+        fontWeight: "700",
+        paddingLeft: "15px",
+        lineHeight: "1.5",
+        marginBottom: "1.5rem !important",
+        marginTop: "1rem !important",
+      },
+      "@media only screen and (min-width: 768px)": {
+        //
+      },
+      "@media only screen and (min-width: 992px)": {
+        display: "flex",
+        justifyContent: "center",
+        color: "white",
+        fontSize: "50px",
+        fontWeight: "700",
+        lineHeight: "1.5",
+        marginTop: "0px",
+        marginBottom: "1.5rem !important",
+      },
     },
     paragraph: {
-      display: "flex",
-      justifyContent: "center",
-      color: "#999999",
-      fontSize: "16px",
-      fontWeight: "400",
-      lineHeight: "1.8",
+      "@media only screen and (max-width: 600px)": {
+        color: "#999999",
+        fontSize: "16px",
+        fontWeight: "400",
+        lineHeight: "1.8",
+        padding: "0px 15px",
+      },
+      "@media only screen and (min-width: 992px)": {
+        textAlign: "center",
+        color: "#999999",
+        fontSize: "16px",
+        fontWeight: "400",
+        lineHeight: "1.8",
+        marginBottom: "1.5rem !important",
+      },
+    },
+    card: {
+      "@media only screen and (max-width: 600px)": {
+        display: "flex",
+        justifyContent: "center",
+        padding: "25px",
+      },
+      "@media only screen and (min-width: 992px)": {
+        display: "flex",
+        justifyContent: "center",
+        padding: "25px",
+      },
     },
   };
   return (
     <Box sx={styles.main}>
-      <Typography sx={styles.skillsHeading}>My Projects</Typography>
+      <Typography sx={styles.projectHeading}>My Projects</Typography>
       <Box sx={styles.paragraph}>
         <Typography>
           These are just a few ideas, but the possibilities for Web Development
           projects are endless.
         </Typography>
       </Box>
-      <Grid
-        container
-        spacing={2}
-        columns={12}
-        style={{
-          padding: "50px 18px",
-        }}
-      >
-        <Grid item xs={4}>
+      <Grid container columns={12}>
+        <Grid item xs={12} sm={12} md={4} lg={4} sx={styles.card}>
           <ProjectCard
             title="HodlInfo Website Clone"
             button="View Project"
@@ -59,8 +92,7 @@ export default function page() {
             pic={hodlinfo}
           />
         </Grid>
-
-        <Grid item xs={4}>
+        <Grid item xs={12} sm={12} md={4} lg={4} sx={styles.card}>
           <ProjectCard
             title="CRI Group Website Clone"
             button="View Project"
@@ -68,8 +100,7 @@ export default function page() {
             pic={cri}
           />
         </Grid>
-
-        <Grid item xs={4}>
+        <Grid item xs={12} sm={12} md={4} lg={4} sx={styles.card}>
           <ProjectCard
             title="Disney+ Clone"
             button="View Project"
@@ -78,13 +109,8 @@ export default function page() {
           />
         </Grid>
       </Grid>
-      <Grid
-        container
-        spacing={2}
-        columns={12}
-        style={{ padding: "0px 18px 0px 18px" }}
-      >
-        <Grid item xs={4}>
+      <Grid container columns={12}>
+        <Grid item xs={12} sm={12} md={4} lg={4} sx={styles.card}>
           <ProjectCard
             title="ToDo List"
             button="View Project"
@@ -92,22 +118,12 @@ export default function page() {
             pic={todo}
           />
         </Grid>
-
-        <Grid item xs={4}>
+        <Grid item xs={12} sm={12} md={4} lg={4} sx={styles.card}>
           <ProjectCard
             title="Counter App"
             button="View Project"
             link="https://counter-react-app-mukulraj21160.vercel.app/"
             pic={counter}
-          />
-        </Grid>
-
-        <Grid item xs={4}>
-          <ProjectCard
-            title="Simple Login Form"
-            button="View Project"
-            link="https://login-form-nine.vercel.app/"
-            pic={login}
           />
         </Grid>
       </Grid>

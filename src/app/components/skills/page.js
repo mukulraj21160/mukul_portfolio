@@ -7,21 +7,43 @@ import "react-sweet-progress/lib/style.css";
 export default function page() {
   const styles = {
     main: {
-      color: "white",
-      paddingBottom: "112px",
+      "@media only screen and (max-width: 600px)": {
+        color: "white",
+      },
+      "@media only screen and (min-width: 768px)": {
+        //
+      },
+      "@media only screen and (min-width: 992px)": {
+        color: "white",
+        paddingBottom: "112px",
+      },
     },
     skillsHeading: {
-      display: "flex",
-      justifyContent: "center",
-      color: "white",
-      fontSize: "50px",
-      fontWeight: "700",
-      lineHeight: "1.5",
-      marginTop: "0px",
-      marginBottom: "1.5rem !important",
+      "@media only screen and (max-width: 600px)": {
+        color: "white",
+        fontSize: "38px",
+        fontWeight: "700",
+        paddingLeft: "15px",
+        lineHeight: "1.5",
+        marginBottom: "1.5rem !important",
+        marginTop: "1.5rem !important",
+      },
+      "@media only screen and (min-width: 768px)": {
+        //
+      },
+      "@media only screen and (min-width: 992px)": {
+        display: "flex",
+        justifyContent: "center",
+        color: "white",
+        fontSize: "50px",
+        fontWeight: "700",
+        lineHeight: "1.5",
+        marginTop: "0px",
+        marginBottom: "1.5rem !important",
+      },
     },
     progress: {
-      padding: "15px 0px 10px 10px",
+      padding: "15px",
     },
     heading: {
       display: "flex",
@@ -35,41 +57,38 @@ export default function page() {
       justifyContent: "center",
     },
     paragraph: {
-      display: "flex",
-      justifyContent: "center",
-      color: "#999999",
-      fontSize: "16px",
-      fontWeight: "400",
-      lineHeight: "1.8",
-    },
-    paragraphLine2: {
-      display: "flex",
-      justifyContent: "center",
-      color: "#999999",
-      fontSize: "16px",
-      fontWeight: "400",
-      lineHeight: "1.8",
-      marginBottom: "1rem",
+      "@media only screen and (max-width: 600px)": {
+        color: "#999999",
+        fontSize: "16px",
+        fontWeight: "400",
+        lineHeight: "1.8",
+        padding: "0px 15px",
+      },
+      "@media only screen and (min-width: 992px)": {
+        textAlign: "center",
+        color: "#999999",
+        fontSize: "16px",
+        fontWeight: "400",
+        lineHeight: "1.8",
+        padding: "0px 112px",
+      },
     },
   };
   return (
     <Box sx={styles.main}>
       <Typography sx={styles.skillsHeading}>My Skills</Typography>
-      <Box sx={styles.paragraph}>
-        <Typography>
+      <Box>
+        <Typography sx={styles.paragraph}>
           As with any field, a willingness to learn and a desire to stay
-          up-to-date with the latest trends and technologies is crucial
+          up-to-date with the latest trends and technologies is crucial to
+          succeed in Web Development.
         </Typography>
       </Box>
       <Box>
-        <Typography sx={styles.paragraphLine2}>
-          to succeed in Web Development.
-        </Typography>
-      </Box>
-      <Box>
-        <Grid container spacing={2} columns={16}>
-          <Grid item xs={1}></Grid>
-          <Grid item xs={7}>
+        <Grid container spacing={2} columns={12}>
+          <Grid item md={1} lg={1}></Grid>
+
+          <Grid item xs={12} sm={12} md={5} lg={5}>
             <Box sx={styles.progress}>
               <Typography sx={styles.heading}>
                 Html
@@ -102,7 +121,7 @@ export default function page() {
                 }}
               />
             </Box>
-            <Box sx={styles.progress}>
+            <Box sx={{ padding: "15px 15px 0px 15px" }}>
               <Typography sx={styles.heading}>
                 NodeJs
                 <span>30%</span>
@@ -119,8 +138,8 @@ export default function page() {
               />
             </Box>
           </Grid>
-          <Grid item xs={7}>
-            <Box sx={styles.progress}>
+          <Grid item xs={12} sm={12} md={5} lg={5}>
+            <Box sx={{ padding: "15px" }}>
               <Typography sx={styles.heading}>
                 Css
                 <span>80%</span>
@@ -152,7 +171,7 @@ export default function page() {
                 }}
               />
             </Box>
-            <Box sx={styles.progress}>
+            <Box sx={{ padding: "15px 15px 0px 15px" }}>
               <Typography sx={styles.heading}>
                 MongoDB
                 <span>85%</span>
@@ -169,7 +188,7 @@ export default function page() {
               />
             </Box>
           </Grid>
-          <Grid item xs={1}></Grid>
+          <Grid item md={1} lg={1}></Grid>
         </Grid>
       </Box>
     </Box>

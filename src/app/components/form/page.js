@@ -7,15 +7,32 @@ import { useState } from "react";
 export default function page() {
   const styles = {
     main: {
-      backgroundColor: "#f8f9fa",
-      padding: "45px 45px 45px 45px",
-      borderRadius: "10px",
+      "@media only screen and (max-width: 600px)": {
+        backgroundColor: "#f8f9fa",
+        padding: "25px",
+        borderRadius: "10px",
+      },
+      "@media only screen and (min-width: 992px)": {
+        backgroundColor: "#f8f9fa",
+        padding: "45px",
+        borderRadius: "10px",
+      },
     },
     input: {
-      backgroundColor: "white",
-      marginBottom: "20px",
+      "@media only screen and (max-width: 600px)": {
+        backgroundColor: "white",
+        marginBottom: "10px",
+      },
+      "@media only screen and (min-width: 992px)": {
+        backgroundColor: "white",
+        marginBottom: "20px",
+      },
     },
     button: {
+      "@media only screen and (max-width: 600px)": {
+        padding: "15px",
+      },
+      textAlign: "left",
       fontSize: "12px",
       letterSpacing: "2px",
       fontWeight: "600",
@@ -53,8 +70,8 @@ export default function page() {
   };
   return (
     <Box sx={styles.main}>
-      <Box sx={styles.formBox}>
-        <Box sx={styles.textField}>
+      <Box>
+        <Box>
           <TextField
             sx={styles.input}
             id="fullWidth"
