@@ -9,9 +9,9 @@ import Typography from "@mui/joy/Typography";
 import Link from "next/link";
 import Image from "next/image";
 
-export default function page({ title, button, pic, link }) {
+export default function CustomCard({ title, button, pic, link }) {
   const styles = {
-    card: {
+    customCard: {
       "@media only screen and (max-width: 600px)": {
         width: 300,
         backgroundColor: "#191A1B",
@@ -47,7 +47,7 @@ export default function page({ title, button, pic, link }) {
     },
   };
   return (
-    <Card sx={styles.card}>
+    <Card sx={styles.customCard}>
       <div>
         <Typography sx={styles.title}>{title}</Typography>
       </div>

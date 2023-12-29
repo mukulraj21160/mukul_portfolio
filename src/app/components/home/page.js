@@ -2,7 +2,6 @@
 
 import { Box, Button, Grid, Typography } from "@mui/material";
 import Image from "next/image";
-import Mukul from "@/app/assets/mukul.jpg";
 
 export default function page() {
   const styles = {
@@ -252,7 +251,7 @@ export default function page() {
           <Box sx={styles.image}>
             <Image
               alt="custom image"
-              src={Mukul}
+              src="https://kamal-personal-bucket.s3.ap-south-1.amazonaws.com/mukul.jpeg"
               width={250}
               height={250}
               style={{

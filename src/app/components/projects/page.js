@@ -1,7 +1,7 @@
 "use client";
 
 import { Box, Grid, Typography } from "@mui/material";
-import ProjectCard from "@/app/components/card/page";
+import ProjectCard from "@/app/components/card/CustomCard";
 import hodlinfo from "../../assets/quadb.png";
 import cri from "@/app/assets/cri.png";
 import disney from "@/app/assets/disney.png";
