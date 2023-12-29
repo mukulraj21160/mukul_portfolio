@@ -8,8 +8,11 @@ export default function page() {
   const styles = {
     main: {
       color: "white",
+      "@media only screen and (min-width: 768px)": {
+        padding: "80px 0px 80px 45px",
+      },
       "@media only screen and (min-width: 992px)": {
-        padding: "112px 45px 112px 45px",
+        padding: "112px 0px 112px 45px",
       },
     },
     order: {
@@ -50,6 +53,12 @@ export default function page() {
         fontSize: "40px",
         fontWeight: "800",
       },
+      "@media only screen and (min-width: 768px)": {
+        display: "flex",
+        alignItems: "baseline",
+        fontSize: "40px",
+        fontWeight: "800",
+      },
       "@media only screen and (min-width: 992px)": {
         display: "flex",
         alignItems: "baseline",
@@ -59,6 +68,12 @@ export default function page() {
     },
     name: {
       "@media only screen and (max-width: 600px)": {
+        color: "#ffbd39",
+        paddingLeft: "20px",
+        fontSize: "40px",
+        fontWeight: "800",
+      },
+      "@media only screen and (min-width: 768px)": {
         color: "#ffbd39",
         paddingLeft: "20px",
         fontSize: "40px",
@@ -77,6 +92,11 @@ export default function page() {
         color: "white",
         fontSize: "30px",
         padding: "20px",
+      },
+      "@media only screen and (min-width: 768px)": {
+        color: "white",
+        fontSize: "24px",
+        fontWeight: "400",
       },
       "@media only screen and (min-width: 992px)": {
         color: "white",
@@ -100,6 +120,24 @@ export default function page() {
         backgroundColor: "#ffbd39",
         color: "black",
         textTransform: "none",
+        border: "1px solid",
+        borderRadius: "40px",
+        borderColor: "#ffbd39",
+        "&:hover": {
+          backgroundColor: "#ffbd39",
+          color: "black",
+        },
+      },
+      "@media only screen and (min-width: 768px)": {
+        fontSize: "12px",
+        letterSpacing: "2px",
+        fontWeight: "600",
+        lineHeight: "1.5",
+        padding: "15px 30px 15px 30px",
+        backgroundColor: "#ffbd39",
+        color: "black",
+        textTransform: "none",
+        margin: "20px 0px 0px 20px",
         border: "1px solid",
         borderRadius: "40px",
         borderColor: "#ffbd39",
@@ -144,6 +182,23 @@ export default function page() {
           color: "black",
         },
       },
+      "@media only screen and (min-width: 768px)": {
+        fontSize: "12px",
+        letterSpacing: "2px",
+        fontWeight: "600",
+        lineHeight: "1.5",
+        padding: "15px 30px 15px 30px",
+        color: "white",
+        textTransform: "none",
+        margin: "20px 0px 0px 20px",
+        borderRadius: "40px",
+        borderColor: "#fff",
+        "&:hover": {
+          background: "#ffbd39",
+          borderColor: "#ffbd39",
+          color: "black",
+        },
+      },
       "@media only screen and (min-width: 992px)": {
         fontSize: "12px",
         letterSpacing: "2px",
@@ -166,14 +221,15 @@ export default function page() {
       "@media only screen and (max-width: 600px)": {
         display: "flex",
         justifyContent: "center",
+        paddingTop: "30px",
         order: 1,
       },
     },
   };
   return (
     <Box sx={styles.main}>
-      <Grid container spacing={2} columns={12}>
-        <Grid item xs={12} sm={12} md={6} lg={6} sx={styles.order}>
+      <Grid container columns={12}>
+        <Grid item xs={12} sm={6} md={6} lg={6} sx={styles.order}>
           <Typography sx={styles.greeting}>Hello!</Typography>
           <Box sx={styles.nameHeading}>
             I&apos;m <Typography sx={styles.name}>Mukul Raj</Typography>
@@ -191,15 +247,8 @@ export default function page() {
             </Button>
           </Box>
         </Grid>
-        <Grid item md={2} lg={2}></Grid>
-        <Grid
-          item
-          xs={12}
-          sm={12}
-          md={4}
-          lg={4}
-          style={{ textAlign: "center" }}
-        >
+        <Grid item lg={2}></Grid>
+        <Grid item xs={12} sm={6} md={6} lg={4} style={{ textAlign: "center" }}>
           <Box sx={styles.image}>
             <Image
               alt="custom image"

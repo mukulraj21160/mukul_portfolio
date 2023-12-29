@@ -2,12 +2,15 @@
 
 import { Box, Button, Grid, Typography } from "@mui/material";
 import Image from "next/image";
-import Mukul from "@/app/assets/mukul.jpg";
+import AboutImg from "@/app/assets/about_me.png";
 
 export default function page() {
   const styles = {
     main: {
       color: "white",
+      "@media only screen and (min-width: 768px)": {
+        padding: "0px 45px 80px 45px",
+      },
       "@media only screen and (min-width: 992px)": {
         padding: "0px 45px 112px 45px",
       },
@@ -19,8 +22,17 @@ export default function page() {
         fontWeight: "700",
         paddingLeft: "15px",
         lineHeight: "1.5",
-        marginBottom: "1.5rem !important",
         marginTop: "1.5rem !important",
+      },
+      "@media only screen and (min-width: 768px)": {
+        display: "flex",
+        justifyContent: "center",
+        color: "white",
+        fontSize: "50px",
+        fontWeight: "700",
+        lineHeight: "1.5",
+        marginTop: "0px",
+        marginBottom: "1.5rem !important",
       },
       "@media only screen and (min-width: 992px)": {
         display: "flex",
@@ -39,15 +51,9 @@ export default function page() {
         justifyContent: "center",
       },
     },
-    image: {
-      "@media only screen and (max-width: 600px)": {
-        display: "flex",
-        justifyContent: "center",
-      },
-    },
     about: {
       "@media only screen and (max-width: 600px)": {
-        padding: "15px",
+        padding: "0px 15px 15px 15px",
       },
     },
     paragraph: {
@@ -119,27 +125,13 @@ export default function page() {
   return (
     <Box sx={styles.main}>
       <Typography sx={styles.heading}>About Me</Typography>
-      <Grid container spacing={2} columns={12}>
-        <Grid
-          item
-          xs={12}
-          sm={12}
-          md={4}
-          lg={4}
-          style={{ textAlign: "center" }}
-        >
-          <Box sx={styles.image}>
-            <Image
-              alt="custom image"
-              src={Mukul}
-              height={250}
-              width={250}
-              style={{ borderRadius: "150px" }}
-            />
+      <Grid container columns={12}>
+        <Grid item xs={12} sm={6} md={6} lg={6} style={{ textAlign: "center" }}>
+          <Box>
+            <Image alt="custom image" src={AboutImg} height={320} width={320} />
           </Box>
         </Grid>
-        <Grid item md={2} lg={2}></Grid>
-        <Grid item xs={12} sm={12} md={6} lg={6}>
+        <Grid item xs={12} sm={6} md={6} lg={6}>
           <Box sx={styles.about}>
             <Typography sx={styles.paragraph}>
               I am passionate about my work, and I am constantly seeking out new

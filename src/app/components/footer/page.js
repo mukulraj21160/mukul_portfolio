@@ -10,12 +10,21 @@ import Link from "next/link";
 
 export default function page() {
   const styles = {
-    main: {},
+    main: {
+      "@media only screen and (min-width: 768px)": {
+        padding: "0px 45px",
+      },
+    },
     heading: {
       "@media only screen and (max-width: 600px)": {
         fontSize: "26px",
         fontWeight: "700",
         padding: "15px 15px 0px 15px",
+      },
+      "@media only screen and (min-width: 768px)": {
+        fontSize: "26px",
+        fontWeight: "700",
+        marginBottom: "15px",
       },
       "@media only screen and (min-width: 992px)": {
         fontSize: "26px",
@@ -29,6 +38,12 @@ export default function page() {
         fontSize: "26px",
         fontWeight: "700",
         padding: "0px 15px 15px 15px",
+      },
+      "@media only screen and (min-width: 768px)": {
+        color: "#999999",
+        fontSize: "26px",
+        fontWeight: "700",
+        marginBottom: "15px",
       },
       "@media only screen and (min-width: 992px)": {
         color: "#999999",
@@ -47,6 +62,15 @@ export default function page() {
         marginTop: "1rem",
         padding: "15px",
       },
+      "@media only screen and (min-width: 768px)": {
+        fontSize: "16px",
+        lineHeight: "1.8",
+        fontWeight: "400",
+        textAlign: "center",
+        color: "rgba(255, 255, 255, 0.7)",
+        padding: "80px 0px 20px 0px",
+        margin: "1rem",
+      },
       "@media only screen and (min-width: 992px)": {
         fontSize: "16px",
         lineHeight: "1.8",
@@ -64,7 +88,7 @@ export default function page() {
       <Box sx={styles.main}>
         <Grid container columns={12}>
           <Grid item md={1} lg={1}></Grid>
-          <Grid item xs={12} sm={12} md={3} lg={3}>
+          <Grid item xs={12} sm={4} md={3} lg={3} sx={styles.content}>
             <Typography sx={styles.heading}>ADDRESS</Typography>
             <Box sx={styles.details}>
               <Typography>Kh No. 42, Street No-23,</Typography>
@@ -73,8 +97,7 @@ export default function page() {
             </Box>
           </Grid>
           <Grid item md={1} lg={1}></Grid>
-
-          <Grid item xs={12} sm={12} md={3} lg={3}>
+          <Grid item xs={12} sm={4} md={3} lg={3} sx={styles.content}>
             <Typography sx={styles.heading}>CONTACT INFO</Typography>
             <Box sx={styles.details}>
               <Typography>Mukul Raj</Typography>
@@ -84,7 +107,7 @@ export default function page() {
             </Box>
           </Grid>
           <Grid item md={1} lg={1}></Grid>
-          <Grid item xs={12} sm={12} md={3} lg={3}>
+          <Grid item xs={12} sm={4} md={3} lg={3} sx={styles.content}>
             <Typography sx={styles.heading}>FOLLOW ME</Typography>
             <Box sx={styles.details}>
               <IconButton>

@@ -16,22 +16,18 @@ export default function page() {
       padding: "0.5rem 1rem",
     },
     nav: {
-      "@media only screen and (max-width: 600px)": {
-        //
-      },
       "@media only screen and (min-width: 768px)": {
-        //
+        padding: "11.2px 10px",
       },
       "@media only screen and (min-width: 992px)": {
         padding: "11.2px 20px",
       },
     },
     navLink: {
-      "@media only screen and (max-width: 600px)": {
-        //
-      },
       "@media only screen and (min-width: 768px)": {
-        //
+        color: "white",
+        fontSize: "16px",
+        padding: "11.2px 10px",
       },
       "@media only screen and (min-width: 992px)": {
         color: "white",

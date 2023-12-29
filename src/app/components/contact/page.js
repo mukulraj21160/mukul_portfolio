@@ -17,7 +17,7 @@ export default function page() {
         marginBottom: "1rem",
       },
       "@media only screen and (min-width: 768px)": {
-        //
+        padding: "0px 45px 80px 45px",
       },
       "@media only screen and (min-width: 992px)": {
         color: "white",
@@ -35,7 +35,13 @@ export default function page() {
         marginTop: "1.5rem !important",
       },
       "@media only screen and (min-width: 768px)": {
-        //
+        display: "flex",
+        justifyContent: "center",
+        color: "white",
+        fontSize: "40px",
+        fontWeight: "700",
+        lineHeight: "1.5",
+        marginTop: "55px",
       },
       "@media only screen and (min-width: 992px)": {
         display: "flex",
@@ -56,6 +62,13 @@ export default function page() {
         lineHeight: "1.8",
         padding: "0px 15px",
       },
+      "@media only screen and (min-width: 768px)": {
+        textAlign: "center",
+        color: "#999999",
+        fontSize: "16px",
+        fontWeight: "400",
+        lineHeight: "1.8",
+      },
       "@media only screen and (min-width: 992px)": {
         textAlign: "center",
         color: "#999999",
@@ -69,6 +82,10 @@ export default function page() {
         textAlign: "center",
         padding: "25px",
       },
+      "@media only screen and (min-width: 768px)": {
+        textAlign: "center",
+        padding: "30px",
+      },
       "@media only screen and (min-width: 992px)": {
         textAlign: "center",
         padding: "50px",
@@ -78,9 +95,13 @@ export default function page() {
       "@media only screen and (max-width: 600px)": {
         textAlign: "center",
       },
+      "@media only screen and (min-width: 768px)": {
+        textAlign: "center",
+        padding: "0px 30px 30px 30px",
+      },
       "@media only screen and (min-width: 992px)": {
         textAlign: "center",
-        paddingBottom: "40px",
+        padding: "0px 30px 40px 30px",
       },
     },
     contactDetails: {
@@ -88,6 +109,11 @@ export default function page() {
         textAlign: "center",
         color: "#999999",
         padding: "10px",
+      },
+      "@media only screen and (min-width: 768px)": {
+        textAlign: "center",
+        color: "#999999",
+        paddingBottom: "40px",
       },
       "@media only screen and (min-width: 992px)": {
         textAlign: "center",
@@ -106,7 +132,7 @@ export default function page() {
         </Typography>
       </Box>
       <Grid container columns={12}>
-        <Grid item xs={12} sm={12} md={3} lg={3}>
+        <Grid item xs={12} sm={3} md={3} lg={3}>
           <Box sx={styles.card}>
             <Image src={Contact1} alt="contact snip" height={100} width={100} />
           </Box>
@@ -117,7 +143,7 @@ export default function page() {
             <Typography>North-West, Delhi</Typography>
           </Box>
         </Grid>
-        <Grid item xs={12} sm={12} md={3} lg={3}>
+        <Grid item xs={12} sm={3} md={3} lg={3}>
           <Box sx={styles.card}>
             <Image src={Contact2} alt="contact snip" height={100} width={100} />
           </Box>
@@ -128,7 +154,7 @@ export default function page() {
             <Typography>+91-84-4882-1160</Typography>
           </Box>
         </Grid>
-        <Grid item xs={12} sm={12} md={3} lg={3}>
+        <Grid item xs={12} sm={3} md={3} lg={3}>
           <Box sx={styles.card}>
             <Image src={Contact3} alt="contact snip" height={100} width={100} />
           </Box>
@@ -139,7 +165,7 @@ export default function page() {
             <Typography>mukulraj21160@gmail.com</Typography>
           </Box>
         </Grid>
-        <Grid item xs={12} sm={12} md={3} lg={3}>
+        <Grid item xs={12} sm={3} md={3} lg={3}>
           <Box sx={styles.card}>
             <Image src={Contact4} alt="contact snip" height={100} width={100} />
           </Box>
@@ -152,20 +178,13 @@ export default function page() {
         </Grid>
       </Grid>
       <Grid container columns={12}>
-        <Grid
-          item
-          xs={12}
-          sm={12}
-          md={6}
-          lg={6}
-          style={{ textAlign: "center" }}
-        >
+        <Grid item xs={12} sm={6} md={6} lg={6} style={{ textAlign: "center" }}>
           <Image src={ContactPic} alt="contact snip" width={300} />
         </Grid>
         <Grid
           item
           xs={12}
-          sm={12}
+          sm={6}
           md={6}
           lg={6}
           style={{ textAlign: "center", padding: "15px" }}

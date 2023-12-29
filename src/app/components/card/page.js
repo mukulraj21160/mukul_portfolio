@@ -10,12 +10,46 @@ import Link from "next/link";
 import Image from "next/image";
 
 export default function page({ title, button, pic, link }) {
+  const styles = {
+    card: {
+      "@media only screen and (max-width: 600px)": {
+        width: 300,
+        backgroundColor: "#191A1B",
+        border: "#191A1B",
+      },
+      "@media only screen and (min-width: 768px)": {
+        width: 200,
+        backgroundColor: "#191A1B",
+        border: "#191A1B",
+      },
+      "@media only screen and (min-width: 992px)": {
+        width: 300,
+        backgroundColor: "#191A1B",
+        border: "#191A1B",
+      },
+    },
+    title: {
+      "@media only screen and (max-width: 600px)": {
+        color: "#fff",
+        fontSize: "20px",
+        fontWeight: "500",
+      },
+      "@media only screen and (min-width: 768px)": {
+        color: "#fff",
+        fontSize: "14px",
+        fontWeight: "500",
+      },
+      "@media only screen and (min-width: 992px)": {
+        color: "#fff",
+        fontSize: "22px",
+        fontWeight: "500",
+      },
+    },
+  };
   return (
-    <Card sx={{ width: 300, backgroundColor: "#191A1B", border: "#191A1B" }}>
+    <Card sx={styles.card}>
       <div>
-        <Typography level="title-lg" style={{ color: "#fff" }}>
-          {title}
-        </Typography>
+        <Typography sx={styles.title}>{title}</Typography>
       </div>
       <AspectRatio minHeight="120px" maxHeight="200px">
         <Image src={pic} loading="lazy" alt="" />

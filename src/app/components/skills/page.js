@@ -11,7 +11,7 @@ export default function page() {
         color: "white",
       },
       "@media only screen and (min-width: 768px)": {
-        //
+        paddingBottom: "80px",
       },
       "@media only screen and (min-width: 992px)": {
         color: "white",
@@ -29,7 +29,13 @@ export default function page() {
         marginTop: "1.5rem !important",
       },
       "@media only screen and (min-width: 768px)": {
-        //
+        display: "flex",
+        justifyContent: "center",
+        color: "white",
+        fontSize: "40px",
+        fontWeight: "700",
+        lineHeight: "1.5",
+        marginTop: "0px",
       },
       "@media only screen and (min-width: 992px)": {
         display: "flex",
@@ -64,6 +70,13 @@ export default function page() {
         lineHeight: "1.8",
         padding: "0px 15px",
       },
+      "@media only screen and (min-width: 768px)": {
+        textAlign: "center",
+        color: "#999999",
+        fontSize: "16px",
+        fontWeight: "400",
+        padding: "0px 112px 20px 112px",
+      },
       "@media only screen and (min-width: 992px)": {
         textAlign: "center",
         color: "#999999",
@@ -86,9 +99,8 @@ export default function page() {
       </Box>
       <Box>
         <Grid container spacing={2} columns={12}>
-          <Grid item md={1} lg={1}></Grid>
-
-          <Grid item xs={12} sm={12} md={5} lg={5}>
+          <Grid item sm={1} md={1} lg={1}></Grid>
+          <Grid item xs={12} sm={5} md={5} lg={5}>
             <Box sx={styles.progress}>
               <Typography sx={styles.heading}>
                 Html
@@ -138,7 +150,7 @@ export default function page() {
               />
             </Box>
           </Grid>
-          <Grid item xs={12} sm={12} md={5} lg={5}>
+          <Grid item xs={12} sm={5} md={5} lg={5}>
             <Box sx={{ padding: "15px" }}>
               <Typography sx={styles.heading}>
                 Css
@@ -188,7 +200,7 @@ export default function page() {
               />
             </Box>
           </Grid>
-          <Grid item md={1} lg={1}></Grid>
+          <Grid item sm={1} md={1} lg={1}></Grid>
         </Grid>
       </Box>
     </Box>

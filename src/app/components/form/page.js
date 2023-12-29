@@ -12,6 +12,11 @@ export default function Form() {
         padding: "25px",
         borderRadius: "10px",
       },
+      "@media only screen and (min-width: 768px)": {
+        backgroundColor: "#f8f9fa",
+        padding: "25px",
+        borderRadius: "10px",
+      },
       "@media only screen and (min-width: 992px)": {
         backgroundColor: "#f8f9fa",
         padding: "45px",
@@ -22,6 +27,10 @@ export default function Form() {
       "@media only screen and (max-width: 600px)": {
         backgroundColor: "white",
         marginBottom: "10px",
+      },
+      "@media only screen and (min-width: 768px)": {
+        backgroundColor: "white",
+        marginBottom: "20px",
       },
       "@media only screen and (min-width: 992px)": {
         backgroundColor: "white",

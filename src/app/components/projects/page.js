@@ -7,14 +7,10 @@ import cri from "@/app/assets/cri.png";
 import disney from "@/app/assets/disney.png";
 import todo from "@/app/assets/todo.png";
 import counter from "@/app/assets/counter.png";
-import login from "@/app/assets/login.png";
 
 export default function page() {
   const styles = {
     main: {
-      "@media only screen and (max-width: 600px)": {
-        //
-      },
       "@media only screen and (min-width: 992px)": {
         color: "white",
         paddingBottom: "112px",
@@ -31,7 +27,13 @@ export default function page() {
         marginTop: "1rem !important",
       },
       "@media only screen and (min-width: 768px)": {
-        //
+        display: "flex",
+        justifyContent: "center",
+        color: "white",
+        fontSize: "40px",
+        fontWeight: "700",
+        lineHeight: "1.5",
+        marginTop: "0px",
       },
       "@media only screen and (min-width: 992px)": {
         display: "flex",
@@ -52,6 +54,14 @@ export default function page() {
         lineHeight: "1.8",
         padding: "0px 15px",
       },
+      "@media only screen and (min-width: 768px)": {
+        textAlign: "center",
+        color: "#999999",
+        fontSize: "16px",
+        fontWeight: "400",
+        lineHeight: "1.8",
+        marginBottom: "1.5rem !important",
+      },
       "@media only screen and (min-width: 992px)": {
         textAlign: "center",
         color: "#999999",
@@ -63,6 +73,11 @@ export default function page() {
     },
     card: {
       "@media only screen and (max-width: 600px)": {
+        display: "flex",
+        justifyContent: "center",
+        padding: "25px",
+      },
+      "@media only screen and (min-width: 768px)": {
         display: "flex",
         justifyContent: "center",
         padding: "25px",
@@ -84,7 +99,7 @@ export default function page() {
         </Typography>
       </Box>
       <Grid container columns={12}>
-        <Grid item xs={12} sm={12} md={4} lg={4} sx={styles.card}>
+        <Grid item xs={12} sm={4} md={4} lg={4} sx={styles.card}>
           <ProjectCard
             title="HodlInfo Website Clone"
             button="View Project"
@@ -92,7 +107,7 @@ export default function page() {
             pic={hodlinfo}
           />
         </Grid>
-        <Grid item xs={12} sm={12} md={4} lg={4} sx={styles.card}>
+        <Grid item xs={12} sm={4} md={4} lg={4} sx={styles.card}>
           <ProjectCard
             title="CRI Group Website Clone"
             button="View Project"
@@ -100,7 +115,7 @@ export default function page() {
             pic={cri}
           />
         </Grid>
-        <Grid item xs={12} sm={12} md={4} lg={4} sx={styles.card}>
+        <Grid item xs={12} sm={4} md={4} lg={4} sx={styles.card}>
           <ProjectCard
             title="Disney+ Clone"
             button="View Project"
@@ -110,7 +125,7 @@ export default function page() {
         </Grid>
       </Grid>
       <Grid container columns={12}>
-        <Grid item xs={12} sm={12} md={4} lg={4} sx={styles.card}>
+        <Grid item xs={12} sm={4} md={4} lg={4} sx={styles.card}>
           <ProjectCard
             title="ToDo List"
             button="View Project"
@@ -118,7 +133,7 @@ export default function page() {
             pic={todo}
           />
         </Grid>
-        <Grid item xs={12} sm={12} md={4} lg={4} sx={styles.card}>
+        <Grid item xs={12} sm={4} md={4} lg={4} sx={styles.card}>
           <ProjectCard
             title="Counter App"
             button="View Project"
