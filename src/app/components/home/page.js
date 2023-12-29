@@ -176,10 +176,11 @@ export default function page() {
         <Grid item xs={12} sm={12} md={6} lg={6} sx={styles.order}>
           <Typography sx={styles.greeting}>Hello!</Typography>
           <Box sx={styles.nameHeading}>
-            I'm <Typography sx={styles.name}>Mukul Raj</Typography>
+            I&apos;m <Typography sx={styles.name}>Mukul Raj</Typography>
           </Box>
           <Typography sx={styles.role}>
-            "Full Stack Developer | React | Node | JavaScript | HTML/CSS"
+            &quot;Full Stack Developer | React | Node | JavaScript |
+            HTML/CSS&quot;
           </Typography>
           <Box sx={styles.btn}>
             <Button sx={styles.button} variant="contained">

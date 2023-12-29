@@ -78,7 +78,7 @@ export default function page() {
             <Typography sx={styles.heading}>CONTACT INFO</Typography>
             <Box sx={styles.details}>
               <Typography>Mukul Raj</Typography>
-              <Typography>"Full Stack Developer"</Typography>
+              <Typography>&quot;Full Stack Developer&quot;</Typography>
               <Typography>Phone: +91-84-4882-1160</Typography>
               <Typography>Email: mukulraj21160@gmail.com</Typography>
             </Box>

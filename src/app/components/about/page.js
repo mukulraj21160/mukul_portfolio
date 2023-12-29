@@ -163,7 +163,7 @@ export default function page() {
             <Box sx={styles.mainHeading}>
               <Typography sx={styles.projHeading}>5</Typography>
               <Typography sx={styles.projHeading2}>
-                Projects Completed
+                Project&apos;s Completed
               </Typography>
             </Box>
             <Button variant="contained" sx={styles.button}>
