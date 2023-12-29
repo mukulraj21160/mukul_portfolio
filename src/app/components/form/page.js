@@ -1,10 +1,10 @@
 "use client";
 
-import { Box, Button, Grid, TextField } from "@mui/material";
+import { Box, Button, TextField } from "@mui/material";
 import React from "react";
 import { useState } from "react";
 
-export default function page() {
+export default function Form() {
   const styles = {
     main: {
       "@media only screen and (max-width: 600px)": {

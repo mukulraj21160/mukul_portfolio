@@ -17,9 +17,6 @@ export default function page() {
         fontWeight: "700",
         padding: "15px 15px 0px 15px",
       },
-      "@media only screen and (min-width: 768px)": {
-        //
-      },
       "@media only screen and (min-width: 992px)": {
         fontSize: "26px",
         fontWeight: "700",
@@ -32,9 +29,6 @@ export default function page() {
         fontSize: "26px",
         fontWeight: "700",
         padding: "0px 15px 15px 15px",
-      },
-      "@media only screen and (min-width: 768px)": {
-        //
       },
       "@media only screen and (min-width: 992px)": {
         color: "#999999",
@@ -53,9 +47,6 @@ export default function page() {
         marginTop: "1rem",
         padding: "15px",
       },
-      "@media only screen and (min-width: 768px)": {
-        //
-      },
       "@media only screen and (min-width: 992px)": {
         fontSize: "16px",
         lineHeight: "1.8",
@@ -72,7 +63,7 @@ export default function page() {
     <Box>
       <Box sx={styles.main}>
         <Grid container columns={12}>
-          <Grid md={1} lg={1}></Grid>
+          <Grid item md={1} lg={1}></Grid>
           <Grid item xs={12} sm={12} md={3} lg={3}>
             <Typography sx={styles.heading}>ADDRESS</Typography>
             <Box sx={styles.details}>
@@ -81,7 +72,7 @@ export default function page() {
               <Typography>North West, Delhi-110042.</Typography>
             </Box>
           </Grid>
-          <Grid md={1} lg={1}></Grid>
+          <Grid item md={1} lg={1}></Grid>
 
           <Grid item xs={12} sm={12} md={3} lg={3}>
             <Typography sx={styles.heading}>CONTACT INFO</Typography>
@@ -92,7 +83,7 @@ export default function page() {
               <Typography>Email: mukulraj21160@gmail.com</Typography>
             </Box>
           </Grid>
-          <Grid md={1} lg={1}></Grid>
+          <Grid item md={1} lg={1}></Grid>
           <Grid item xs={12} sm={12} md={3} lg={3}>
             <Typography sx={styles.heading}>FOLLOW ME</Typography>
             <Box sx={styles.details}>

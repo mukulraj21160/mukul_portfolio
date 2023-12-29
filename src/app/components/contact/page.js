@@ -114,7 +114,7 @@ export default function page() {
             <Typography>ADDRESS</Typography>
           </Box>
           <Box sx={styles.contactDetails}>
-            <Typography>Mukundpur, Delhi</Typography>
+            <Typography>North-West, Delhi</Typography>
           </Box>
         </Grid>
         <Grid item xs={12} sm={12} md={3} lg={3}>

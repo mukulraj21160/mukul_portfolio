@@ -16,12 +16,28 @@ export default function page() {
       padding: "0.5rem 1rem",
     },
     nav: {
-      padding: "11.2px 20px",
+      "@media only screen and (max-width: 600px)": {
+        //
+      },
+      "@media only screen and (min-width: 768px)": {
+        //
+      },
+      "@media only screen and (min-width: 992px)": {
+        padding: "11.2px 20px",
+      },
     },
     navLink: {
-      color: "white",
-      fontSize: "16px",
-      padding: "11.2px 20px",
+      "@media only screen and (max-width: 600px)": {
+        //
+      },
+      "@media only screen and (min-width: 768px)": {
+        //
+      },
+      "@media only screen and (min-width: 992px)": {
+        color: "white",
+        fontSize: "16px",
+        padding: "11.2px 20px",
+      },
     },
     logo: {
       cursor: "pointer",

@@ -7,6 +7,7 @@ import Card from "@mui/joy/Card";
 import CardContent from "@mui/joy/CardContent";
 import Typography from "@mui/joy/Typography";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function BasicCard({ title, button, pic, link }) {
   return (
@@ -17,7 +18,7 @@ export default function BasicCard({ title, button, pic, link }) {
         </Typography>
       </div>
       <AspectRatio minHeight="120px" maxHeight="200px">
-        <img src={pic.src} loading="lazy" alt="" />
+        <Image src={pic} loading="lazy" alt="" />
       </AspectRatio>
       <CardContent orientation="horizontal">
         <Link href={link} target="_blank" rel="noreferrer">

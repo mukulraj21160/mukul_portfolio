@@ -2,18 +2,12 @@
 
 import { Box, Button, Grid, Typography } from "@mui/material";
 import Image from "next/image";
-import Mukul from "../../assets/mukul.jpg";
+import Mukul from "@/app/assets/mukul.jpg";
 
 export default function page() {
   const styles = {
     main: {
       color: "white",
-      "@media only screen and (max-width: 600px)": {
-        //
-      },
-      "@media only screen and (min-width: 768px)": {
-        //
-      },
       "@media only screen and (min-width: 992px)": {
         padding: "0px 45px 112px 45px",
       },
@@ -28,9 +22,6 @@ export default function page() {
         marginBottom: "1.5rem !important",
         marginTop: "1.5rem !important",
       },
-      "@media only screen and (min-width: 768px)": {
-        //
-      },
       "@media only screen and (min-width: 992px)": {
         display: "flex",
         justifyContent: "center",
@@ -43,12 +34,6 @@ export default function page() {
       },
     },
     mainGrid: {
-      "@media only screen and (max-width: 600px)": {
-        //
-      },
-      "@media only screen and (min-width: 768px)": {
-        //
-      },
       "@media only screen and (min-width: 992px)": {
         display: "flex",
         justifyContent: "center",
@@ -178,7 +163,7 @@ export default function page() {
             <Box sx={styles.mainHeading}>
               <Typography sx={styles.projHeading}>5</Typography>
               <Typography sx={styles.projHeading2}>
-                Project's Completed
+                Projects Completed
               </Typography>
             </Box>
             <Button variant="contained" sx={styles.button}>

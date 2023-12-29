@@ -2,18 +2,12 @@
 
 import { Box, Button, Grid, Typography } from "@mui/material";
 import Image from "next/image";
-import Mukul from "../../assets/mukul.jpg";
+import Mukul from "@/app/assets/mukul.jpg";
 
 export default function page() {
   const styles = {
     main: {
       color: "white",
-      "@media only screen and (max-width: 600px)": {
-        //
-      },
-      "@media only screen and (min-width: 768px)": {
-        //
-      },
       "@media only screen and (min-width: 992px)": {
         padding: "112px 45px 112px 45px",
       },
@@ -21,9 +15,6 @@ export default function page() {
     order: {
       "@media only screen and (max-width: 600px)": {
         order: 2,
-      },
-      "@media only screen and (min-width: 992px)": {
-        //
       },
     },
     greeting: {
@@ -59,9 +50,6 @@ export default function page() {
         fontSize: "40px",
         fontWeight: "800",
       },
-      "@media only screen and (min-width: 768px)": {
-        //
-      },
       "@media only screen and (min-width: 992px)": {
         display: "flex",
         alignItems: "baseline",
@@ -75,9 +63,6 @@ export default function page() {
         paddingLeft: "20px",
         fontSize: "40px",
         fontWeight: "800",
-      },
-      "@media only screen and (min-width: 768px)": {
-        //
       },
       "@media only screen and (min-width: 992px)": {
         color: "#ffbd39",
@@ -93,9 +78,6 @@ export default function page() {
         fontSize: "30px",
         padding: "20px",
       },
-      "@media only screen and (min-width: 768px)": {
-        //
-      },
       "@media only screen and (min-width: 992px)": {
         color: "white",
         fontSize: "30px",
@@ -106,12 +88,6 @@ export default function page() {
       "@media only screen and (max-width: 600px)": {
         display: "flex",
         justifyContent: "space-evenly",
-      },
-      "@media only screen and (min-width: 768px)": {
-        //
-      },
-      "@media only screen and (min-width: 992px)": {
-        //
       },
     },
     button: {
@@ -131,9 +107,6 @@ export default function page() {
           backgroundColor: "#ffbd39",
           color: "black",
         },
-      },
-      "@media only screen and (min-width: 768px)": {
-        //
       },
       "@media only screen and (min-width: 992px)": {
         fontSize: "12px",
@@ -171,9 +144,6 @@ export default function page() {
           color: "black",
         },
       },
-      "@media only screen and (min-width: 768px)": {
-        //
-      },
       "@media only screen and (min-width: 992px)": {
         fontSize: "12px",
         letterSpacing: "2px",
@@ -197,9 +167,6 @@ export default function page() {
         display: "flex",
         justifyContent: "center",
         order: 1,
-      },
-      "@media only screen and (min-width: 992px)": {
-        //
       },
     },
   };
