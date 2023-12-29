@@ -9,7 +9,7 @@ import Typography from "@mui/joy/Typography";
 import Link from "next/link";
 import Image from "next/image";
 
-export default function BasicCard({ title, button, pic, link }) {
+export default function page({ title, button, pic, link }) {
   return (
     <Card sx={{ width: 300, backgroundColor: "#191A1B", border: "#191A1B" }}>
       <div>
