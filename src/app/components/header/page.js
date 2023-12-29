@@ -6,6 +6,10 @@ import Link from "@mui/material/Link";
 export default function page() {
   const styles = {
     main: {
+      "@media only screen and (max-width: 600px)": {
+        backgroundColor: "black",
+        padding: "20px",
+      },
       backgroundColor: "black",
       padding: "0px 45px 0px 45px",
     },
@@ -24,6 +28,11 @@ export default function page() {
       },
     },
     navLink: {
+      "@media only screen and (max-width: 600px)": {
+        color: "#000",
+        textDecoration: "none",
+        cursor: "not-allowed",
+      },
       "@media only screen and (min-width: 768px)": {
         color: "white",
         fontSize: "16px",

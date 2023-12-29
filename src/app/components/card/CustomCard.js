@@ -11,7 +11,7 @@ import Image from "next/image";
 
 export default function CustomCard({ title, button, pic, link }) {
   const styles = {
-    customCard: {
+    main: {
       "@media only screen and (max-width: 600px)": {
         width: 300,
         backgroundColor: "#191A1B",
@@ -47,7 +47,7 @@ export default function CustomCard({ title, button, pic, link }) {
     },
   };
   return (
-    <Card sx={styles.customCard}>
+    <Card sx={styles.main}>
       <div>
         <Typography sx={styles.title}>{title}</Typography>
       </div>
